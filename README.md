@@ -60,7 +60,23 @@ screenshots/
 ```
 
 ---
+## Project Screenshots
 
+### Dashboard / Homepage
+
+![Homepage](screenshots/homepage.png)
+
+### Expense Records
+
+![Expense Records](screenshots/expense-records.png)
+
+### Excel Export Feature
+
+![Excel Export](screenshots/excel-export-feature.png)
+
+### Transaction History
+
+![Transaction History](screenshots/transaction-history.png)
 ## Future Enhancements
 
 - Advanced analytics dashboard
