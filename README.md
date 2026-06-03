@@ -7,7 +7,14 @@ Smart Expense Tracker is a responsive expense management application designed to
 This project was developed with a practical approach to financial tracking and analysis-ready reporting using front-end web technologies.
 
 ---
+## Project Highlights
 
+- Developed a responsive expense management application using HTML, CSS, and JavaScript.
+- Implemented Excel export functionality for structured data management and reporting.
+- Designed an intuitive dashboard for expense tracking and transaction management.
+- Built analytics components to support data-driven financial monitoring.
+- Focused on usability, organized data handling, and analysis-ready reporting.
+- 
 ## Key Features
 
 ### Secure Login System
