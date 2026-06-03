@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>ExpenseIQ - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+
+    <div class="login-container">
+        <div class="login-card">
+
+            <h1 class="project-title">ExpenseIQ</h1>
+            <p class="project-tagline">
+                Track smarter. Spend better
+            </p>
+
+            <form id="loginForm">
+
+                <div class="input-group">
+                    <label>Username</label>
+                    <input
+                        type="text"
+                        id="username"
+                        placeholder="Enter username"
+                        required
+                    >
+                </div>
+
+                <div class="input-group">
+                    <label>Password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Enter password"
+                        required
+                    >
+                </div>
+
+                <p id="loginError" class="error-message"></p>
+
+                <button type="submit" class="login-btn">
+                    Login
+                </button>
+
+            </form>
+
+        </div>
+    </div>
+
+    <script>
+        // If already logged in
+        if (localStorage.getItem("isLoggedIn") === "true") {
+            window.location.href = "dashboard.html";
+        }
+
+        const loginForm = document.getElementById("loginForm");
+        const errorMessage = document.getElementById("loginError");
+
+        loginForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const username =
+                document.getElementById("username").value.trim();
+
+            const password =
+                document.getElementById("password").value.trim();
+
+            // Fixed Login Credentials
+            const validUsername = "user";
+            const validPassword = "1234";
+
+            if (
+                username === validUsername &&
+                password === validPassword
+            ) {
+                localStorage.setItem("isLoggedIn", "true");
+
+                window.location.href = "dashboard.html";
+            } else {
+                errorMessage.textContent =
+                    "Invalid username or password";
+            }
+        });
+    </script>
+
+</body>
+</html>
